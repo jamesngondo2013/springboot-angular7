@@ -1,0 +1,9 @@
+<mat-toolbar class="mat-primary">
+  <h3 [style.color]="'white'">Balaka Book Store</h3>
+  <span class="example-spacer"></span>
+  <span [hidden]="!loggedIn"><a mat-button >View Book List</a></span>
+  <span [hidden]="!loggedIn"><a mat-button >Add Book</a> </span>
+  <span [hidden]="!loggedIn"><a mat-button >Logout</a></span>
+</mat-toolbar>
+
+<button mat-button class="mat-warn" (click)="toggleDisplay()">Toggle</button>
